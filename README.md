@@ -39,5 +39,6 @@ Solução web que recebe dados enviados por drones utilizados para coletar dados
 - A mesma aplicação se encarrega de consumir a mensagem produzida (poderia ser outro microserviço). Através da mensagem recebida, a aplicação valida se os dados recebidos estão dentro dos padrões. Caso a temperatura seja maior que 35º ou menor que 0º ou a umidade seja menor que 15%, será emitido um alerta via e-mail.
 
 ### Como testar a aplicação:
-- Utilizar o POST para cadastrar um drone (pode ser via swagger)
-- Utilizar o POST de analise para simular a leitura de dados dos sensores do drone.
+- Utilizar o POST via swagger do endpoint _/drone_ para cadastrar um drone.
+
+- Utilizar o POST via swagger do endpoint _/analise_ para simular a inserção de dados dos sensores do drone.

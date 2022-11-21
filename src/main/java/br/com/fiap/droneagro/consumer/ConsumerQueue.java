@@ -35,9 +35,7 @@ public class ConsumerQueue {
                 "\n e umidade: " + mensagem.getUmidade() +
                 ". \nVerificar analise do drone.";
            
-            System.out.println(corpoEmail);
-            // TODO: Verificar configuração para envio de e-mail, precisa criar senha de app
-            //  mailService.send("lira.cesar@gmail.com", "Alerta", corpoEmail);
+            mailService.send("testeaulafiap@gmail.com", "Alerta", corpoEmail);
         }
     }
     

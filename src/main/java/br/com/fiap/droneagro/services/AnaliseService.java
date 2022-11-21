@@ -36,8 +36,6 @@ public class AnaliseService {
         {
             throw new Exception("Drone informado invalido");
         }
-
-        System.out.println("\n\n ==== \n\n" + analiseDto.toString() + "\n\n");
         
         // Latitude de -90 a 90
 

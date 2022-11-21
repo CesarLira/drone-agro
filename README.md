@@ -18,11 +18,9 @@ Solução web que recebe dados enviados por drones utilizados para coletar dados
 - RabbitMQ
 
 ### Como rodar o projeto
-
-```bash
-./mvnw spring-boot:run
 ```
-
+mvn spring-boot:run
+```
 
 ### Acessar documentação da API
 -  Acesse o swagger -> http://localhost:8080/swagger-ui/index.html
@@ -41,4 +39,25 @@ Solução web que recebe dados enviados por drones utilizados para coletar dados
 ### Como testar a aplicação:
 - Utilizar o POST via swagger do endpoint _/drone_ para cadastrar um drone.
 
+```Exemplo JSON inserção drone
+
+  {
+    "ativarRastreamento": true,
+    "descricao": "Primeiro Drone"
+  }
+```
 - Utilizar o POST via swagger do endpoint _/analise_ para simular a inserção de dados dos sensores do drone.
+
+```Exemplo JSON inserção analise que dispara alerta
+
+  {
+    "ativarRastreamento": true,
+    "descricao": "Primeiro Drone"
+  }
+```
+
+> Note: Para a gravação do vídeo, fiz o teste utilizando um e-mail pessoal. Caso queira executar o teste completo, alterar a classe ConsumerQueue.java, na linha 39 o primeiro parâmetro é o e-mail de destino do alerta.
+
+### Vídeo exemplo funcionamento aplicação
+
+<iframe width="640" height="360" src="https://www.loom.com/embed/48614601010c4be7b38bc20cb75d3ae6" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>

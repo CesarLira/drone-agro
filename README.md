@@ -60,4 +60,9 @@ mvn spring-boot:run
 
 ### Vídeo exemplo funcionamento aplicação
 
-<iframe width="640" height="360" src="https://www.loom.com/embed/48614601010c4be7b38bc20cb75d3ae6" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+https://www.loom.com/share/48614601010c4be7b38bc20cb75d3ae6
+
+
+
+https://user-images.githubusercontent.com/69155212/203151492-7818051b-6771-4e66-a1cc-4778cf2ec6af.mp4
+
